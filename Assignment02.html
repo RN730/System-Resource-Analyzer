@@ -1,0 +1,306 @@
+<html><head><meta name="description" content="OutputUtil developed by LT. Executed by D:\AI Work\PycharmProjects\Assignment2">
+<style>body {
+    background-color: #1C2833; /* Dark Charcoal Background */
+    color: #F2F4F4;            /* Off-white text for dark mode readability */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #8E44AD; /* Purple Accent */
+    text-align: center;
+}
+
+h3 {
+    color: #8E44AD; /* Purple Accent */
+}
+
+.vericaltext {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+table, th, td {
+    border: 1px solid #7F8C8D; /* Muted border line */
+    text-align: center;
+    vertical-align: top;
+}
+
+th > a {
+    color: #BDC3C7; /* Light Muted Silver links */
+}
+
+th {
+    background-color: #8E44AD; /* Purple Header Background */
+    color: #FFFFFF;            /* White text for crisp contrast */
+}
+
+/* Task [2]: Legible alternating rows using your custom colors */
+tr:nth-child(even) {
+    background-color: #BDC3C7; /* Muted Silver Row */
+    color: #1C2833;            /* Dark Charcoal Text for legibility */
+}
+
+tr:nth-child(odd) {
+    background-color: #D2B4DE; /* Light Purple / Plum Tint Row */
+    color: #1C2833;            /* Dark Charcoal Text for legibility */
+}</style>
+<script>
+function sortTable(tableId, colNum, colType) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchCount = 0;
+  table = document.getElementById(tableId);
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[colNum];
+      y = rows[i + 1].getElementsByTagName("td")[colNum];
+      if (colType == 'N') { 
+        if (((dir == "asc") && (Number(x.innerHTML) > Number(y.innerHTML))) ||
+            ((dir == "desc") && (Number(x.innerHTML) < Number(y.innerHTML)))) {
+          shouldSwitch = true;
+          break;
+        }
+      } else {
+        if (((dir == "asc") && (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase())) ||
+            ((dir == "desc") && (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()))) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchCount ++;
+    } else {
+     if (switchCount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</head>
+<body><h1>System Process Report</h1>
+<br><div>Operating Systems (CSCI 340) <br> Assignment 2 - Process Monitor <br> Run Focus: Memory Percent Utilization</div>
+<h3>Top System Resource Consumers</h3>
+<table id="table-Top-System-Resource-Consumers" style="width:100%"><th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 0, 'N')"">PID</a>
+</th>
+<th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 1, 'N')"">PPID</a>
+</th>
+<th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 2, 'S')"">Process Name</a>
+</th>
+<th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 3, 'S')"">Status</a>
+</th>
+<th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 4, 'S')"">User</a>
+</th>
+<th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 5, 'N')"">Memory %</a>
+</th>
+<th><a href="javascript:sortTable('table-Top-System-Resource-Consumers', 6, 'N')"">CPU Time (s)</a>
+</th>
+<tr><td style="text-align:center;">16188</td>
+<td style="text-align:center;">11568</td>
+<td style="text-align:left;">pycharm64.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">19.09</td>
+<td style="text-align:right;">811.95</td>
+</tr>
+<tr><td style="text-align:center;">17856</td>
+<td style="text-align:center;">11568</td>
+<td style="text-align:left;">HP.Omen.OmenCommandCenter.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">3.56</td>
+<td style="text-align:right;">1328.94</td>
+</tr>
+<tr><td style="text-align:center;">12296</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">3.06</td>
+<td style="text-align:right;">255.67</td>
+</tr>
+<tr><td style="text-align:center;">2600</td>
+<td style="text-align:center;">24080</td>
+<td style="text-align:left;">steamwebhelper.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">2.97</td>
+<td style="text-align:right;">889.47</td>
+</tr>
+<tr><td style="text-align:center;">14696</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">2.62</td>
+<td style="text-align:right;">20.98</td>
+</tr>
+<tr><td style="text-align:center;">17272</td>
+<td style="text-align:center;">11568</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">2.6</td>
+<td style="text-align:right;">184.44</td>
+</tr>
+<tr><td style="text-align:center;">11568</td>
+<td style="text-align:center;">11536</td>
+<td style="text-align:left;">explorer.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">2.18</td>
+<td style="text-align:right;">110.67</td>
+</tr>
+<tr><td style="text-align:center;">8848</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">2.16</td>
+<td style="text-align:right;">26.98</td>
+</tr>
+<tr><td style="text-align:center;">3652</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.91</td>
+<td style="text-align:right;">48.19</td>
+</tr>
+<tr><td style="text-align:center;">24904</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.85</td>
+<td style="text-align:right;">31.81</td>
+</tr>
+<tr><td style="text-align:center;">22180</td>
+<td style="text-align:center;">18456</td>
+<td style="text-align:left;">OmenCommandCenterBackground.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.74</td>
+<td style="text-align:right;">126.69</td>
+</tr>
+<tr><td style="text-align:center;">12720</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.72</td>
+<td style="text-align:right;">15.28</td>
+</tr>
+<tr><td style="text-align:center;">376</td>
+<td style="text-align:center;">17272</td>
+<td style="text-align:left;">chrome.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.7</td>
+<td style="text-align:right;">11.23</td>
+</tr>
+<tr><td style="text-align:center;">18372</td>
+<td style="text-align:center;">24080</td>
+<td style="text-align:left;">steamwebhelper.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.43</td>
+<td style="text-align:right;">2085.73</td>
+</tr>
+<tr><td style="text-align:center;">24080</td>
+<td style="text-align:center;">10904</td>
+<td style="text-align:left;">steamwebhelper.exe</td>
+<td style="text-align:center;">running</td>
+<td style="text-align:left;">DESKTOP-JJ5130\junai</td>
+<td style="text-align:right;">1.39</td>
+<td style="text-align:right;">257.25</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>COUNT</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>15</b>
+</td>
+<td style="text-align:right;"><b>15</b>
+</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>TOTAL</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>49.98</b>
+</td>
+<td style="text-align:right;"><b>6205.28</b>
+</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>MINIMUM</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>1.39</b>
+</td>
+<td style="text-align:right;"><b>11.23</b>
+</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>MAXIMUM</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>19.09</b>
+</td>
+<td style="text-align:right;"><b>2085.73</b>
+</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>MEDIAN</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>2.16</b>
+</td>
+<td style="text-align:right;"><b>126.69</b>
+</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>MEAN</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>3.33</b>
+</td>
+<td style="text-align:right;"><b>413.69</b>
+</td>
+</tr>
+<tr><td style="text-align:center;"></td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"><b>STD DEV</b>
+</td>
+<td style="text-align:center;"></td>
+<td style="text-align:left;"></td>
+<td style="text-align:right;"><b>4.26</b>
+</td>
+<td style="text-align:right;"><b>588.7</b>
+</td>
+</tr>
+</table>
+<center><h6>&copy;2025 • All Rights Reserved • Generated on Jun. 04, 2026 23:50 PM</h6>
+</center>
+</body>
+</html>

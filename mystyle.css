@@ -1,0 +1,45 @@
+body {
+    background-color: #1C2833; /* Dark Charcoal Background */
+    color: #F2F4F4;            /* Off-white text for dark mode readability */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #8E44AD; /* Purple Accent */
+    text-align: center;
+}
+
+h3 {
+    color: #8E44AD; /* Purple Accent */
+}
+
+.vericaltext {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+table, th, td {
+    border: 1px solid #7F8C8D; /* Muted border line */
+    text-align: center;
+    vertical-align: top;
+}
+
+th > a {
+    color: #BDC3C7; /* Light Muted Silver links */
+}
+
+th {
+    background-color: #8E44AD; /* Purple Header Background */
+    color: #FFFFFF;            /* White text for crisp contrast */
+}
+
+/* Task [2]: Legible alternating rows using your custom colors */
+tr:nth-child(even) {
+    background-color: #BDC3C7; /* Muted Silver Row */
+    color: #1C2833;            /* Dark Charcoal Text for legibility */
+}
+
+tr:nth-child(odd) {
+    background-color: #D2B4DE; /* Light Purple / Plum Tint Row */
+    color: #1C2833;            /* Dark Charcoal Text for legibility */
+}

@@ -1,0 +1,133 @@
+Starting Process Monitor. Refreshing every 5 seconds...
+Press Ctrl+C in the terminal to stop at any time.
+
+
+================= SNAPSHOT: 2026-06-04 23:42:46 =================
+  pid  ppid                            name  status             username  mem_pct  cpu_time
+16188 11568                   pycharm64.exe running DESKTOP-JJ5130\junai    19.25    721.50
+17856 11568   HP.Omen.OmenCommandCenter.exe running DESKTOP-JJ5130\junai     3.56   1318.11
+ 2600 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     2.97    889.22
+14696 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.83     16.19
+12296 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.75    230.12
+17272 11568                      chrome.exe running DESKTOP-JJ5130\junai     2.47    157.08
+11568 11536                    explorer.exe running DESKTOP-JJ5130\junai     2.19    107.00
+ 8848 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.18     23.52
+22180 18456 OmenCommandCenterBackground.exe running DESKTOP-JJ5130\junai     1.72    122.03
+ 3652 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.65     40.59
+24904 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.64     24.98
+18372 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.43   2085.67
+24080 10904              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.39    254.44
+17208 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.04      3.34
+10904 11568                       steam.exe running DESKTOP-JJ5130\junai     0.95    173.77
+Wrote output file Assignment02.html
+--> Files successfully generated at 2026-06-04 23:42:46.
+
+
+================= SNAPSHOT: 2026-06-04 23:42:52 =================
+  pid  ppid                            name  status             username  mem_pct  cpu_time
+16188 11568                   pycharm64.exe running DESKTOP-JJ5130\junai    19.27    726.25
+17856 11568   HP.Omen.OmenCommandCenter.exe running DESKTOP-JJ5130\junai     3.56   1318.25
+ 2600 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     2.97    889.23
+14696 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.82     16.30
+12296 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80    230.14
+17272 11568                      chrome.exe running DESKTOP-JJ5130\junai     2.49    157.14
+ 8848 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.20     23.53
+11568 11536                    explorer.exe running DESKTOP-JJ5130\junai     2.19    107.02
+22180 18456 OmenCommandCenterBackground.exe running DESKTOP-JJ5130\junai     1.72    122.05
+24904 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.69     25.02
+ 3652 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.65     40.59
+18372 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.43   2085.67
+24080 10904              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.39    254.48
+17208 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.05      3.34
+10904 11568                       steam.exe running DESKTOP-JJ5130\junai     0.95    173.80
+Wrote output file Assignment02.html
+--> Files successfully generated at 2026-06-04 23:42:52.
+
+
+================= SNAPSHOT: 2026-06-04 23:42:58 =================
+  pid  ppid                            name  status             username  mem_pct  cpu_time
+16188 11568                   pycharm64.exe running DESKTOP-JJ5130\junai    19.27    726.50
+17856 11568   HP.Omen.OmenCommandCenter.exe running DESKTOP-JJ5130\junai     3.56   1318.36
+ 2600 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     2.97    889.23
+12296 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80    230.14
+14696 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.78     16.38
+17272 11568                      chrome.exe running DESKTOP-JJ5130\junai     2.46    157.16
+ 8848 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.20     23.53
+11568 11536                    explorer.exe running DESKTOP-JJ5130\junai     2.18    107.02
+22180 18456 OmenCommandCenterBackground.exe running DESKTOP-JJ5130\junai     1.72    122.06
+24904 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.69     25.02
+ 3652 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.62     40.61
+18372 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.43   2085.67
+24080 10904              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.39    254.50
+17208 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.05      3.34
+10904 11568                       steam.exe running DESKTOP-JJ5130\junai     0.95    173.83
+Wrote output file Assignment02.html
+--> Files successfully generated at 2026-06-04 23:42:58.
+
+
+================= SNAPSHOT: 2026-06-04 23:43:04 =================
+  pid  ppid                            name  status             username  mem_pct  cpu_time
+16188 11568                   pycharm64.exe running DESKTOP-JJ5130\junai    19.27    726.56
+17856 11568   HP.Omen.OmenCommandCenter.exe running DESKTOP-JJ5130\junai     3.56   1318.44
+ 2600 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     2.97    889.23
+14696 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80     16.45
+12296 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80    230.14
+17272 11568                      chrome.exe running DESKTOP-JJ5130\junai     2.46    157.19
+ 8848 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.20     23.53
+11568 11536                    explorer.exe running DESKTOP-JJ5130\junai     2.19    107.02
+22180 18456 OmenCommandCenterBackground.exe running DESKTOP-JJ5130\junai     1.72    122.06
+24904 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.69     25.02
+ 3652 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.62     40.61
+18372 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.43   2085.67
+24080 10904              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.39    254.55
+17208 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.05      3.34
+10904 11568                       steam.exe running DESKTOP-JJ5130\junai     0.95    173.86
+Wrote output file Assignment02.html
+--> Files successfully generated at 2026-06-04 23:43:04.
+
+
+================= SNAPSHOT: 2026-06-04 23:43:10 =================
+  pid  ppid                            name  status             username  mem_pct  cpu_time
+16188 11568                   pycharm64.exe running DESKTOP-JJ5130\junai    19.27    726.91
+17856 11568   HP.Omen.OmenCommandCenter.exe running DESKTOP-JJ5130\junai     3.56   1318.48
+ 2600 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     2.97    889.23
+14696 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.81     16.47
+12296 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80    230.14
+17272 11568                      chrome.exe running DESKTOP-JJ5130\junai     2.46    157.19
+ 8848 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.20     23.53
+11568 11536                    explorer.exe running DESKTOP-JJ5130\junai     2.19    107.05
+22180 18456 OmenCommandCenterBackground.exe running DESKTOP-JJ5130\junai     1.72    122.08
+24904 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.69     25.02
+ 3652 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.62     40.61
+18372 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.43   2085.67
+24080 10904              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.39    254.56
+17208 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.05      3.34
+10904 11568                       steam.exe running DESKTOP-JJ5130\junai     0.95    173.88
+Wrote output file Assignment02.html
+--> Files successfully generated at 2026-06-04 23:43:10.
+
+
+================= SNAPSHOT: 2026-06-04 23:43:17 =================
+  pid  ppid                            name  status             username  mem_pct  cpu_time
+16188 11568                   pycharm64.exe running DESKTOP-JJ5130\junai    19.27    727.14
+17856 11568   HP.Omen.OmenCommandCenter.exe running DESKTOP-JJ5130\junai     3.56   1318.72
+ 2600 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     2.97    889.23
+14696 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80     16.58
+12296 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.80    230.14
+17272 11568                      chrome.exe running DESKTOP-JJ5130\junai     2.46    157.22
+ 8848 17272                      chrome.exe running DESKTOP-JJ5130\junai     2.20     23.53
+11568 11536                    explorer.exe running DESKTOP-JJ5130\junai     2.18    107.05
+22180 18456 OmenCommandCenterBackground.exe running DESKTOP-JJ5130\junai     1.72    122.08
+24904 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.69     25.03
+ 3652 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.62     40.61
+18372 24080              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.43   2085.67
+24080 10904              steamwebhelper.exe running DESKTOP-JJ5130\junai     1.39    254.58
+17208 17272                      chrome.exe running DESKTOP-JJ5130\junai     1.05      3.34
+10904 11568                       steam.exe running DESKTOP-JJ5130\junai     0.95    173.94
+Wrote output file Assignment02.html
+--> Files successfully generated at 2026-06-04 23:43:17.
+
+
+Execution terminated.
+
+Process finished with exit code 0
